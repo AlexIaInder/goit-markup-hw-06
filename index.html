@@ -77,29 +77,93 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <form class="form">
-                <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+                <h2 class="title-form">
+                  Оставьте свои данные, мы вам перезвоним
+                </h2>
                 <div class="form-iteam">
-                 <div class="form-field">
-                <label for="name"> <span class="decor-text">Имя</span> </label>
-                <input type="text" name="name" id="name" autocomplete="name">
-                 </div>
                   <div class="form-field">
-                    <label for="phone"><span class="decor-text">Телефон</span></label>
-                <input type="tel" name="phone" id="phone" autocomplete="tel">
-              </div>       
-               <div class="form-field"><label for="mail"><span class="decor-text">Почта</span></label>
-                <input type="email" name="mail" id="mail" autocomplete="email">
-              </div>
-                <div class="form-field">
-                  <label for="comment"> <span class="decor-text">Комментарий</span></label>
-                <textarea name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
+                    <label for="name">
+                      <span class="decor-text"> Имя </span>
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      autocomplete="name"
+                    />
+                    <div class="icon-container">
+                      <svg class="icon-user">
+                        <use href="./images/icon/icons.svg#user"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <div class="icon-container">
+                      <svg class="icon-phone">
+                        <use href="./images/icon/icons.svg#phone-form"></use>
+                      </svg>
+                    </div>
+                    <label for="phone">
+                      <span class="decor-text">Телефон</span></label
+                    >
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      autocomplete="tel"
+                    />
+                    <div class="icon-container">
+                      <svg class="icon-phone">
+                        <use href="./images/icon/icons.svg#phone-form"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                   
+                    <label for="mail"
+                      ><span class="decor-text">Почта</span></label
+                    >
+                    <input
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      autocomplete="email"
+                    />
+                     <div class="icon-container">
+                      <svg class="icon-mail">
+                        <use href="./images/icon/icons.svg#letter-form"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="comment">
+                      <span class="decor-text">Комментарий</span></label
+                    >
+                    <textarea
+                      name="comment"
+                      id="comment"
+                      rows="10"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
                 </div>
+                <div class="agree">
+                  <input
+                    type="checkbox"
+                    name="check-agree"
+                    value="check-agree"
+                    id="agree"
+                  />
+                  <label for="agree">
+                    <span class="dec-agree"
+                      >Соглашаюсь с рассылкой и принимаю
+                    </span>
+                    <a href=""
+                      ><span class="dec-tems">Условия договора</span>
+                    </a>
+                  </label>
                 </div>
-                <div class="agree"> <input type="checkbox" name="check-agree" value="check-agree" id="agree">
-                <label for="agree"> <span class="dec-agree">Соглашаюсь с рассылкой и принимаю </span> <a href=""><span class="dec-tems">Условия договора</span> </a> </label>
-              </div>
-               
-                
+
                 <button type="submit" class="button-send">Отправить</button>
               </form>
               <button class="btn-close" data-modal-close type="button">
@@ -271,21 +335,21 @@
                   </li>
                   <li>
                     <a class="logo-social" href=""
-                      ><svg >
+                      ><svg>
                         <use href="./images/icon/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a class="logo-social" href=""
-                      ><svg >
+                      ><svg>
                         <use href="./images/icon/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a class="logo-social" href="">
-                      <svg >
+                      <svg>
                         <use href="./images/icon/icons.svg#linkin"></use>
                       </svg>
                     </a>
@@ -312,7 +376,7 @@
                   </li>
                   <li>
                     <a class="logo-social" href=""
-                      ><svg >
+                      ><svg>
                         <use href="./images/icon/icons.svg#twitter"></use>
                       </svg>
                     </a>
@@ -367,7 +431,7 @@
                   </li>
                   <li>
                     <a class="logo-social" href="">
-                      <svg >
+                      <svg>
                         <use href="./images/icon/icons.svg#linkin"></use>
                       </svg>
                     </a>
@@ -487,6 +551,18 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="follower-container">
+            <h2 class="follower">Подпишитесь на рассылку</h2>
+            <form class="follower-form">
+              <input type="email" placeholder="E-mail" />
+              <button type="button" class="btn-follower">
+                Подписаться
+                <svg>
+                  <use href="./images/icon/icons.svg#fly"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
