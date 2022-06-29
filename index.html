@@ -76,19 +76,31 @@
           <!-- Модальное окно -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form >
-                <label for="name">Имя</label>
-                <input type="text" name="name" id="name">
-                  <br />
-                <label for="phone">Телефон</label>
-                <input type="tel" name="phone" id="phone">
-                  <br />
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">
-                <br />
-                <input type="checkbox" name="" id="">
-                <br />
-                <button type="submit">Отправить</button>
+              <form class="form">
+                <h2 class="title-form">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-iteam">
+                 <div class="form-field">
+                <label for="name"> <span class="decor-text">Имя</span> </label>
+                <input type="text" name="name" id="name" autocomplete="name">
+                 </div>
+                  <div class="form-field">
+                    <label for="phone"><span class="decor-text">Телефон</span></label>
+                <input type="tel" name="phone" id="phone" autocomplete="tel">
+              </div>       
+               <div class="form-field"><label for="mail"><span class="decor-text">Почта</span></label>
+                <input type="email" name="mail" id="mail" autocomplete="email">
+              </div>
+                <div class="form-field">
+                  <label for="comment"> <span class="decor-text">Комментарий</span></label>
+                <textarea name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
+                </div>
+                </div>
+                <div class="agree"> <input type="checkbox" name="check-agree" value="check-agree" id="agree">
+                <label for="agree"> <span class="dec-agree">Соглашаюсь с рассылкой и принимаю </span> <a href=""><span class="dec-tems">Условия договора</span> </a> </label>
+              </div>
+               
+                
+                <button type="submit" class="button-send">Отправить</button>
               </form>
               <button class="btn-close" data-modal-close type="button">
                 <svg class="close-svg">
