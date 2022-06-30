@@ -718,6 +718,7 @@ button {
 }
 textarea {
   resize: none;
+  padding: 15px 16px;
 }
 /* форма */
 .form {
@@ -765,10 +766,10 @@ textarea {
   width: 18px;
   height: 18px;
   fill: #212121;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dec-agree {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -787,6 +788,20 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 15px;
   height: 12px;
 }
+.svg-check {
+  display: none;
+  position: absolute;
+  top: -1px;
+  left: -29px;
+}
+.svg-cube {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -25px;
+  
+}
+
 .dec-tems {
   display: inline-block;
   font-weight: 400;
@@ -807,14 +822,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .form-field input {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: url(../images/icon/cursor.svg), auto;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
   border: 1px solid var(--accent-color);
-  
 }
 .form-field input:focus + .icon-container {
   fill: var(--accent-color);
@@ -825,13 +840,23 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
+  border-radius: 4px;
 }
 .agree {
   margin-top: 20px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+.agree input {
+  appearance: none;
+  margin-left: 23px;
+}
+.agree input:checked + label .svg-cube {
+  display: none;
+}
+.agree input:checked + label .svg-check {
+  display: block;
 }
 /* other button */
 .secondary-button {
