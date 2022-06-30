@@ -425,6 +425,7 @@ header {
 .wrapper-container {
   display: flex;
   gap: 30px;
+  padding: 0;
 }
 .clines-container {
   display: flex;
@@ -523,6 +524,9 @@ header {
 .info-li {
   margin-top: 9px;
   margin-bottom: 9px;
+}
+.contact-footer {
+  width: 231px;
 }
 .contact-footer .info-footer:hover,
 .contact-footer .info-footer:focus {
@@ -791,7 +795,7 @@ textarea {
 .svg-check {
   display: none;
   position: absolute;
-  top: -1px;
+  top: -1;
   left: -29px;
 }
 .svg-cube {
